@@ -5,7 +5,7 @@ class PakTTP(BaseHTTPRequestHandler):
     routes = {}
 
     def __init__(self, request, client_address, server):
-        print(f"[-] Request from {client_address[0]} on port {client_address[1]}")
+        print(f"[-] Request from {client_address[0]} on port {client_address[1]}.")
 
     def route(self, path, methods):
         def inner(func):

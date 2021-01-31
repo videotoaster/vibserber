@@ -23,7 +23,7 @@ from pakthttp.server.server import HttpServer
 args = parser.parse_args()
 
 server = HttpServer(args.host, args.port)
-print(f"[-] Starting Pakt HTTP server on host {args.host} and port {args.port}")
+print(f"[-] Starting Pakt HTTP server on host {args.host} and port {args.port}.")
 try:
     print(server.serve_forever())
 except KeyboardInterrupt:
